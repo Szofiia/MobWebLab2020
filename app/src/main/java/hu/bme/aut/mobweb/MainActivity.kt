@@ -1,12 +1,17 @@
 package hu.bme.aut.mobweb
 
+import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.widget.Button
+import kotlinx.android.synthetic.*
 
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,6 +24,13 @@ class MainActivity : AppCompatActivity() {
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
+
+    }
+
+
+    fun navigateMainTwo(view: View) {
+        val intent = Intent(this, MainActivity2::class.java).apply{}
+        startActivity(intent);
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

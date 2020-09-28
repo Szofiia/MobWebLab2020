@@ -52,9 +52,15 @@ captures/
 .DS_Store
 /captures
 
-# Android Studio 3 in .gitignore file.
-.idea/caches
-.idea/modules.xml
+# Android Studio
+*.iml
+.idea
+#.idea/workspace.xml - remove # and delete .idea if it better suit your needs.
+.gradle
+build/
+.navigation
+captures/
+output.json 
 
 # Keystore files
 # Uncomment the following lines if you do not want to check your keystore files in.
